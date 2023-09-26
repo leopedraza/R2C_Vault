@@ -10,7 +10,7 @@ title: Racing to the Cloud Vault
 description: Aprovisiona un vault y crea una llave para cifrar texto
 informationalText: Sample informational text to display in tab...
 schemaVersion: 1.1.0
-version: "20190304"
+version: "20200301"
 
 # URL of Logo Icon used on Application Information tab. Logo must be 130x130 pixels.
 # (Optional)
