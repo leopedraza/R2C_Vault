@@ -8,7 +8,6 @@ Ten en cuenta que tu resultado es base64
 EOT
 }
 
-output "Llave_OCID" {
+output "OCID_llave" {
 ${oci_kms_key.R2C_key.id}
-
 }
