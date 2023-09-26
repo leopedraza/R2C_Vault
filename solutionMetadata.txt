@@ -10,7 +10,7 @@
         "iconLine2": "Instance",
         "iconLine3": ""
     },
-    "terraformVersion": "0.12.x",
+    "terraformVersion": "1.0.x",
     "isFreeTier": false,
     "type": "service",
     "categoryId": "1"
