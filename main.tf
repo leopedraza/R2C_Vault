@@ -1,17 +1,13 @@
 terraform {
-  required_providers {
-    oci = {
-      source = "oracle/oci"
-    }
-  }
+}
+
+provider "oci" {
+  region = "${var.region}"
 }
 
 variable "compartment_ocid" {}
 variable "region" {}
 
-provider "oci" {
-  region = "${var.region}"
-}
 
 resource "oci_kms_vault" "R2C_vault" {
     #Required
