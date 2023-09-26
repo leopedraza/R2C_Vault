@@ -27,6 +27,7 @@ resource "oci_kms_key" "R2C_key" {
     }
     management_endpoint = oci_kms_vault.R2C_vault.management_endpoint
     protection_mode = "SOFTWARE"
+    depends_on = [time_sleep.wait_60_seconds]
 }
 
 resource "oci_kms_encrypted_data" "Encrypted_data_R2C" {
@@ -34,4 +35,9 @@ resource "oci_kms_encrypted_data" "Encrypted_data_R2C" {
     crypto_endpoint = oci_kms_vault.R2C_vault.crypto_endpoint
     key_id = oci_kms_key.R2C_key.id
     plaintext = "aHR0cHM6Ly9naXRodWIuY29tL2pHYWxhbkRTL2hhY2thdGhvbi8K"
+}
+
+resource "time_sleep" "wait_60_seconds" {
+  depends_on = [oci_kms_vault.R2C_vault]
+  create_duration = "60s"
 }
