@@ -9,5 +9,6 @@ EOT
 }
 
 output "OCID_llave" {
-${oci_kms_key.R2C_key.id}
+    value = oci_kms_key.R2C_key.id
 }
+
