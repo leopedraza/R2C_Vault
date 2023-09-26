@@ -1,5 +1,9 @@
-title: "OCI Vault y Llave"
-stackDescription: "Aprovisiona un vault y crea una llave para cifrar texto"
+# Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+
+
+title: "Crea dos NSGs que permiten acceso a los servidores WAF"
+stackDescription: "Aprovisiona dos NSG para aceptar conexiones desde los servidores WAF (HTTP y HTTPS)"
 schemaVersion: 1.1.0
 version: "20200301"
 locale: "en"
