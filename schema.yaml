@@ -1,9 +1,34 @@
-# Copyright (c) 2020, Oracle and/or its affiliates. All rights reserved.
-# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
-
-
-title: "Crea dos NSGs que permiten acceso a los servidores WAF"
-stackDescription: "Aprovisiona dos NSG para aceptar conexiones desde los servidores WAF (HTTP y HTTPS)"
+stackDescription: ""
 schemaVersion: 1.1.0
 version: "20200301"
 locale: "en"
+
+# Title shown in Application Information tab.
+title: Racing to the Cloud Vault
+# Sub Title shown in Application Information tab.
+description: Aprovisiona un vault y crea una llave para cifrar texto
+informationalText: Sample informational text to display in tab...
+schemaVersion: 1.1.0
+version: "20190304"
+
+# URL of Logo Icon used on Application Information tab. Logo must be 130x130 pixels.
+# (Optional)
+logoUrl: https://cloudmarketplace.oracle.com/marketplace/content?contentId=149749310
+
+# output variable groups
+outputGroups:
+- title: "Texto Cifrado"
+  outputs:
+    - CipherText
+- title: "LLave de cifrado"
+  outputs:
+    - OCID_llave
+
+...
+
+# output variable field names and values
+outputs:
+  CipherText:
+    title: "Instrucciones"
+  OCID_llave:
+    title: "OCID Llave"
