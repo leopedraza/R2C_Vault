@@ -1,4 +1,5 @@
-stackDescription: "Aprovisiona un vault y crea una llave para cifrar texto"
+title: Racing to the Cloud Vault
+stackDescription: Aprovisiona un vault y crea una llave para cifrar texto
 schemaVersion: 1.1.0
 version: "20200301"
 locale: "en"
