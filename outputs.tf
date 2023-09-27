@@ -1,5 +1,5 @@
 output "INSTRUCCIONES" {
-    value =  <<EOT
+    value =  <<Importante
 
 ************* INSTRUCCIONES **********************************
 Este es el texto cifrado:
@@ -12,12 +12,20 @@ Para obtener el texto plano solo necesitas el cloud Shell, el OCID de tu llave y
 
 Puedes consultar la informacion sobre el proceso comando de descifrado aqui: 
 
+Documentacion del comando para descifrar:
 https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.33.0/oci_cli_docs/cmdref/kms/crypto/decrypt.html
 
-Ten en cuenta que tu resultado es base64
+Una vez  logres usar el comando exitosamente vas a recibir una respuesta con varios parametros, el que nos interesa es 
+"plaintext"
+
+Ten en cuenta que tu resultado es base64. Si no lo conoces Google te puede ayudar :-) 
 
 **************************************************************
-EOT
+Importante
+}
+
+output "ciphertext" {
+    value = oci_kms_encrypted_data.Encrypted_data_R2C.ciphertext
 }
 
 output "key-id" {
