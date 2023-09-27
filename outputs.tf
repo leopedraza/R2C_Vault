@@ -8,7 +8,7 @@ Este es el texto cifrado:
 ${oci_kms_encrypted_data.Encrypted_data_R2C.ciphertext}
 -------------------------------------------------------
 
-Para obtener el texto plano solo necesitas el cloud Shell, el OCID de tu llave y el endpoint.
+Para obtener el texto plano solo necesitas el cloud Shell, el key-id y el endpoint.
 
 Puedes consultar la informacion sobre el comando de descifrado aqui: 
 https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.33.0/oci_cli_docs/cmdref/kms/crypto/decrypt.html
