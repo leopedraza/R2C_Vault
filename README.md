@@ -1,6 +1,6 @@
 # Racing to the Cloud Vault
 
-Crea un Vault y una llave para cifrar texto
+Crea un Vault y una llave para descifrar texto
 
 Vamos a descifrar la URL de Racing to the Cloud!
 
