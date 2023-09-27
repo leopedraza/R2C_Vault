@@ -17,7 +17,6 @@ Una vez  logres usar el comando exitosamente vas a recibir una respuesta con var
 "plaintext"
 
 Ten en cuenta que tu resultado es base64. Si no lo conoces Google te puede ayudar :-) 
-
 **************************************************************
 EOT
 }
